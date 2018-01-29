@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/bakgrundLjus"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:background="#ffffff"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/obs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/bakgrundLjus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="OBS! "
+            android:textColor="#39ac39"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Är du säker på att du vill avbryta?"
+            android:textColor="#39ac39"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/obs"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp" />
+
+
+        <Button
+            android:id="@+id/yesButton"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#AED581"
+            android:clickable="true"
+            android:minWidth="100dp"
+            android:onClick="onYesClick"
+            android:text="Ja"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="26dp"
+            android:layout_alignBottom="@+id/bakgrundLjus"
+            android:layout_toRightOf="@+id/obs"
+            android:layout_toEndOf="@+id/obs" />
+
+        <Button
+            android:id="@+id/regretButton"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#AED581"
+            android:clickable="true"
+            android:minWidth="100dp"
+            android:onClick="onRegretClick"
+            android:text="Ångra"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/yesButton"
+            android:layout_alignBottom="@+id/yesButton"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

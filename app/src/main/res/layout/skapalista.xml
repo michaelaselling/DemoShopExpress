@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/listName"
+            android:layout_marginTop="10dp"
+            android:background="#808080" />
+
+        <TextView
+            android:id="@+id/lista"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_above="@+id/shoppingButton"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView13"
+            android:background="#808080"
+            android:backgroundTint="#b3e6b3" />
+
+        <Button
+            android:id="@+id/backButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:minHeight="40dp"
+            android:minWidth="100dp"
+            android:onClick="onBackClick"
+            android:text="Tillbaka"
+            android:textAllCaps="false"
+            android:textColor="#39ac39"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView13"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:text="Lägg till varor:"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/listName"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#39ac39"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/shoppingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:background="#39ac39"
+            android:clickable="true"
+            android:onClick="onShoppingClick"
+            android:text="Skapa lista"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/backButton"
+            android:layout_alignRight="@+id/backButton"
+            android:layout_below="@+id/backButton"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="21dp"
+            android:text="Namn:"
+            android:textColor="#39ac39"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/bröd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/vara"
+            android:layout_alignStart="@+id/vara"
+            android:layout_below="@+id/textView13"
+            android:layout_marginTop="19dp"
+            android:buttonTint="#737373"
+            android:onClick="onCheckClickBröd"
+            android:text="Bröd"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/mjölk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:buttonTint="#737373"
+            android:onClick="onCheckClickMjölk"
+            android:text="Mjölk"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/bröd"
+            android:layout_alignLeft="@+id/bröd"
+            android:layout_alignStart="@+id/bröd" />
+
+        <CheckBox
+            android:id="@+id/ägg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:buttonTint="#737373"
+            android:onClick="onCheckClickÄgg"
+            android:text="Ägg"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/mjölk"
+            android:layout_alignLeft="@+id/mjölk"
+            android:layout_alignStart="@+id/mjölk" />
+
+        <CheckBox
+            android:id="@+id/smör"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:buttonTint="#737373"
+            android:onClick="onCheckClickSmör"
+            android:text="Smör"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/ägg"
+            android:layout_alignLeft="@+id/ägg"
+            android:layout_alignStart="@+id/ägg" />
+
+        <CheckBox
+            android:id="@+id/grädde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="Grädde"
+            android:buttonTint="#737373"
+            android:onClick="onCheckClickGrädde"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/smör"
+            android:layout_alignLeft="@+id/smör"
+            android:layout_alignStart="@+id/smör" />
+
+        <CheckBox
+            android:id="@+id/yoghurt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Yoghurt"
+            android:buttonTint="#737373"
+            android:onClick="onCheckClickYoghurt"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/grädde"
+            android:layout_alignLeft="@+id/grädde"
+            android:layout_alignStart="@+id/grädde" />
+
+        <CheckBox
+            android:id="@+id/flingor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flingor"
+            android:buttonTint="#737373"
+            android:onClick="onCheckClickFlingor"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginRight="46dp"
+            android:layout_marginEnd="46dp"
+            android:layout_alignBaseline="@+id/bröd"
+            android:layout_alignBottom="@+id/bröd"
+            android:layout_alignRight="@+id/antalVaror"
+            android:layout_alignEnd="@+id/antalVaror" />
+
+        <CheckBox
+            android:id="@+id/ost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ost"
+            android:buttonTint="#737373"
+            android:onClick="onCheckClickOst"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/mjölk"
+            android:layout_alignBottom="@+id/mjölk"
+            android:layout_alignLeft="@+id/flingor"
+            android:layout_alignStart="@+id/flingor" />
+
+        <CheckBox
+            android:id="@+id/kaffe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ost"
+            android:layout_alignStart="@+id/ost"
+            android:layout_alignTop="@+id/ägg"
+            android:text="Kaffe"
+            android:buttonTint="#737373"
+            android:onClick="onCheckClickKaffe"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <CheckBox
+            android:id="@+id/juice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Juice"
+            android:buttonTint="#737373"
+            android:onClick="onCheckClickJuice"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/smör"
+            android:layout_alignBottom="@+id/smör"
+            android:layout_alignLeft="@+id/kaffe"
+            android:layout_alignStart="@+id/kaffe" />
+
+        <CheckBox
+            android:id="@+id/baguette"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baguette"
+            android:buttonTint="#737373"
+            android:onClick="onCheckClickBaguette"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_above="@+id/yoghurt"
+            android:layout_alignLeft="@+id/juice"
+            android:layout_alignStart="@+id/juice" />
+
+        <CheckBox
+            android:id="@+id/jordgubbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/baguette"
+            android:layout_alignStart="@+id/baguette"
+            android:layout_alignTop="@+id/yoghurt"
+            android:text="Jordgubbar"
+            android:buttonTint="#737373"
+            android:onClick="onCheckClickJordgubbar"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lista"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView13"
+            android:background="#b3b3b3"
+            android:text="Antal varor"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/antalVaror"
+            android:layout_width="75sp"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/vara"
+            android:layout_alignRight="@+id/listName"
+            android:layout_alignEnd="@+id/listName" />
+
+    </RelativeLayout>
+
+</FrameLayout>

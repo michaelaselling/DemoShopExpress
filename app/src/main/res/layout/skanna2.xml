@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/vitBakgrund"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/backButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:minHeight="40dp"
+            android:minWidth="100dp"
+            android:onClick="onBackClick"
+            android:text="Tillbaka"
+            android:textAllCaps="false"
+            android:textColor="#39ac39"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bakgrundSvart"
+            android:layout_width="380sp"
+            android:layout_height="500sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/backButton"
+            android:layout_marginTop="86dp"
+            android:background="#000000" />
+
+        <ImageView
+            android:id="@+id/skanningsfönster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/backButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="106dp"
+            app:srcCompat="@drawable/skanningsfonster" />
+
+        <ImageView
+            android:id="@+id/skanna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/skanningsfönster"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:clickable="true"
+            android:onClick="onSkannaVaraClick"
+            app:srcCompat="@drawable/scanna" />
+
+        <TextView
+            android:id="@+id/titel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:text="Skriv in streckkod manuellt:"
+            android:textColor="#39ac39"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/backButton"
+            android:layout_alignLeft="@+id/skanningsfönster"
+            android:layout_alignStart="@+id/skanningsfönster" />
+
+        <EditText
+            android:id="@+id/streckkod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/titel"
+            android:layout_alignStart="@+id/titel"
+            android:layout_below="@+id/titel"
+            android:ems="10"
+            android:inputType="number"
+            android:layout_alignRight="@+id/titel"
+            android:layout_alignEnd="@+id/titel"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

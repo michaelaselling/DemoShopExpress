@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/vitBakgrund"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/backButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:minHeight="40dp"
+            android:minWidth="100dp"
+            android:onClick="onBackClick"
+            android:text="Tillbaka"
+            android:textAllCaps="false"
+            android:textColor="#39ac39"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_below="@+id/backButton"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:text="Storhandla"
+            android:textColor="#39ac39"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bakgrundLjus"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_above="@+id/shoppingButton"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:background="#000000"
+            android:backgroundTint="#b3e6b3" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/bakgrundLjus"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="11dp"
+            android:text="- Mjölk"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/shoppingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:background="#39ac39"
+            android:clickable="true"
+            android:onClick="onShoppingClick"
+            android:text="Börja handla"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ägg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_below="@+id/textView6"
+            android:layout_marginTop="22dp"
+            android:text="- Ägg"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/yoghurt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ägg"
+            android:layout_alignStart="@+id/ägg"
+            android:layout_below="@+id/ägg"
+            android:layout_marginTop="20dp"
+            android:text="- Yoghurt"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/smör"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView6"
+            android:layout_alignRight="@+id/textView6"
+            android:layout_below="@+id/yoghurt"
+            android:layout_marginTop="23dp"
+            android:text="- Smör"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bröd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/yoghurt"
+            android:layout_alignLeft="@+id/yoghurt"
+            android:layout_alignRight="@+id/yoghurt"
+            android:layout_alignStart="@+id/yoghurt"
+            android:layout_centerVertical="true"
+            android:text="- Bröd"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/smör"
+            android:layout_alignLeft="@+id/smör"
+            android:layout_alignRight="@+id/smör"
+            android:layout_alignStart="@+id/smör"
+            android:layout_below="@+id/bröd"
+            android:layout_marginTop="25dp"
+            android:text="- Ost"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/banan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/bröd"
+            android:layout_alignLeft="@+id/ost"
+            android:layout_alignRight="@+id/bröd"
+            android:layout_alignStart="@+id/ost"
+            android:layout_below="@+id/ost"
+            android:layout_marginTop="21dp"
+            android:text="- Banan"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/äpple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/banan"
+            android:layout_alignLeft="@+id/banan"
+            android:layout_alignRight="@+id/banan"
+            android:layout_alignStart="@+id/banan"
+            android:layout_below="@+id/banan"
+            android:layout_marginTop="20dp"
+            android:text="- Äpple"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/morot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/äpple"
+            android:layout_alignStart="@+id/äpple"
+            android:layout_below="@+id/äpple"
+            android:layout_marginTop="25dp"
+            android:text="- Morot"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gurka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_toRightOf="@+id/textView"
+            android:text="- Gurka"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/paprika"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/yoghurt"
+            android:layout_alignLeft="@+id/gurka"
+            android:layout_alignStart="@+id/gurka"
+            android:text="- Paprika"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/köttfärs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/yoghurt"
+            android:layout_alignLeft="@+id/paprika"
+            android:layout_alignStart="@+id/paprika"
+            android:text="- Köttfärs"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/kyckling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/smör"
+            android:layout_alignLeft="@+id/köttfärs"
+            android:layout_alignStart="@+id/köttfärs"
+            android:text="- Kyckling"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pyttipanna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/kyckling"
+            android:layout_alignStart="@+id/kyckling"
+            android:layout_centerVertical="true"
+            android:text="- Pyttipanna"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hushållspapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pyttipanna"
+            android:layout_alignStart="@+id/pyttipanna"
+            android:layout_alignTop="@+id/ost"
+            android:text="- Hushållspapper"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tandborste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/äpple"
+            android:layout_alignLeft="@+id/hushållspapper"
+            android:layout_alignStart="@+id/hushållspapper"
+            android:text="- Tandborste"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tandkräm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tandborste"
+            android:layout_alignStart="@+id/tandborste"
+            android:layout_alignTop="@+id/äpple"
+            android:text="- Tandkräm"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Chips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/morot"
+            android:layout_alignLeft="@+id/tandkräm"
+            android:layout_alignStart="@+id/tandkräm"
+            android:text="- Chips"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:onClick="onShareClick"
+            app:srcCompat="@drawable/dela" />
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/share"
+            android:layout_marginBottom="14dp"
+            android:layout_toEndOf="@+id/Chips"
+            android:layout_toRightOf="@+id/Chips"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:maxWidth="39dip"
+            android:onClick="onEditClick"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/edit" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
+

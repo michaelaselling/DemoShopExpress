@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.micka.coopshopexpress">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Bankid"></activity>
+
+        <activity android:name=".Shoppinglistor"></activity>
+
+        <activity android:name=".Storhandla"></activity>
+
+        <activity android:name=".Tacomys"></activity>
+
+        <activity android:name=".Inkopslista_3"></activity>
+
+        <activity android:name=".Popup3"></activity>
+
+        <activity android:name=".Popup2"></activity>
+
+        <activity android:name=".Popup1"></activity>
+
+        <activity android:name=".skapaLista"></activity>
+
+        <activity android:name=".Popup4"></activity>
+
+        <activity android:name=".Popup5"></activity>
+
+        <activity android:name=".Popup6"></activity>
+
+        <activity android:name=".Popup7"></activity>
+
+        <activity android:name=".Popup8"></activity>
+
+        <activity android:name=".Minlista"></activity>
+
+        <activity android:name=".Handla"></activity>
+
+        <activity android:name=".Varukorg"></activity>
+
+        <activity android:name=".Avbryt"></activity>
+
+        <activity android:name=".Skanna"></activity>
+
+        <activity android:name=".Popup9"></activity>
+
+        <activity android:name=".Popup10"></activity>
+
+        <activity android:name=".Popup11"></activity>
+
+        <activity android:name=".Betala"></activity>
+
+        <activity android:name=".Utcheckning"></activity>
+
+        <activity android:name=".Kvitto"></activity>
+
+        <activity android:name=".End"></activity>
+
+        <activity android:name=".Popup12"></activity>
+
+        <activity android:name=".Popup13"></activity>
+
+        <activity android:name=".Popup14"></activity>
+
+        <activity android:name=".Varukorg2"></activity>
+
+        <activity android:name=".Skanna2"></activity>
+
+        <activity android:name=".Popup15"></activity>
+
+        <activity android:name=".Popup16"></activity>
+
+        <activity android:name=".Popup17"></activity>
+
+        <activity android:name=".Popup18"></activity>
+
+        <activity android:name=".Betala2"></activity>
+
+        <activity android:name=".Utcheckning2"></activity>
+
+        <activity android:name=".Kvitto2"></activity>
+
+    </application>
+
+</manifest>

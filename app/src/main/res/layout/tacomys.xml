@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/vitBakgrund"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/backButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:minHeight="40dp"
+            android:minWidth="100dp"
+            android:onClick="onBackClick"
+            android:text="Tillbaka"
+            android:textAllCaps="false"
+            android:textColor="#39ac39"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/backButton"
+            android:layout_marginLeft="33dp"
+            android:layout_marginStart="33dp"
+            android:text="Tacomys"
+            android:textColor="#39ac39"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bakgrundLjus"
+            android:layout_width="400dp"
+            android:layout_height="450dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:background="#000000"
+            android:backgroundTint="#b3e6b3" />
+
+        <Button
+            android:id="@+id/shoppingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:background="#39ac39"
+            android:text="Börja handla"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:clickable="true"
+            android:onClick="onShoppingClick"/>
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dela"
+            android:layout_above="@+id/bakgrundLjus"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="onShareClick"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/gurka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="17dp"
+            android:text="- Gurka"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/isbergssallad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/gurka"
+            android:layout_alignStart="@+id/gurka"
+            android:layout_below="@+id/gurka"
+            android:layout_marginTop="21dp"
+            android:text="- Isbergssallad"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/paprika"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/isbergssallad"
+            android:layout_alignStart="@+id/isbergssallad"
+            android:layout_below="@+id/isbergssallad"
+            android:layout_marginTop="18dp"
+            android:text="- Paprika"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tomat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/paprika"
+            android:layout_alignStart="@+id/paprika"
+            android:layout_below="@+id/paprika"
+            android:layout_marginTop="19dp"
+            android:text="- Tomat"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/majs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/gurka"
+            android:layout_alignLeft="@+id/tomat"
+            android:layout_alignRight="@+id/gurka"
+            android:layout_alignStart="@+id/tomat"
+            android:layout_centerVertical="true"
+            android:text="- Majs"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/avokado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/majs"
+            android:layout_alignStart="@+id/majs"
+            android:layout_below="@+id/majs"
+            android:layout_marginTop="21dp"
+            android:text="- Avokado"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/köttfärs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/avokado"
+            android:layout_alignRight="@+id/avokado"
+            android:layout_below="@+id/avokado"
+            android:layout_marginTop="19dp"
+            android:text="- Köttfärs"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Salsasås"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/köttfärs"
+            android:layout_alignStart="@+id/köttfärs"
+            android:layout_below="@+id/köttfärs"
+            android:layout_marginTop="27dp"
+            android:text="- Salsasås"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tacochips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Salsasås"
+            android:layout_alignStart="@+id/Salsasås"
+            android:layout_below="@+id/Salsasås"
+            android:layout_marginTop="26dp"
+            android:text="- Tacochips"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tortilla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Tortillabröd"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_above="@+id/isbergssallad"
+            android:layout_toLeftOf="@+id/share"
+            android:layout_toStartOf="@+id/share" />
+
+        <TextView
+            android:id="@+id/gräddfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Gräddfil"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/isbergssallad"
+            android:layout_alignBottom="@+id/isbergssallad"
+            android:layout_alignLeft="@+id/tortilla"
+            android:layout_alignStart="@+id/tortilla" />
+
+        <TextView
+            android:id="@+id/cola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/paprika"
+            android:layout_alignBottom="@+id/paprika"
+            android:layout_alignLeft="@+id/gräddfil"
+            android:layout_alignStart="@+id/gräddfil"
+            android:text="- Coca cola"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/edit"
+            app:srcCompat="@drawable/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="39dip"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds ="true"
+            android:layout_marginBottom="14dp"
+            android:layout_above="@+id/bakgrundLjus"
+            android:layout_toLeftOf="@+id/share"
+            android:layout_toStartOf="@+id/share"
+            android:clickable="true"
+            android:onClick="onEditClick"/>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

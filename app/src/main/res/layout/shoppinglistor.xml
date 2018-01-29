@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/backButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#ffffff"
+            android:clickable="true"
+            android:minHeight="40dp"
+            android:minWidth="100dp"
+            android:onClick="onBackClick"
+            android:text="Tillbaka"
+            android:textAllCaps="false"
+            android:textColor="#39ac39"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bakgrund"
+            android:layout_width="400dp"
+            android:layout_height="135dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="18dp"
+            android:background="#ffffff"
+            android:backgroundTint="#b3e6b3"
+            android:layout_alignBottom="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/bakgrundg"
+            android:layout_width="400dp"
+            android:layout_height="38dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/bakgrund" />
+
+        <TextView
+            android:id="@+id/nyLista"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bakgrundg"
+            android:layout_alignLeft="@+id/textView9"
+            android:layout_alignStart="@+id/textView9"
+            android:clickable="true"
+            android:onClick="onNewListClick"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/backButton"
+            android:layout_marginLeft="39dp"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="14dp"
+            android:text="Välj inköpslista:"
+            android:textColor="#39ac39"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="29dp"
+            android:text="Storhandla"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:onClick="onStorhandlaClick"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/bakgrundGrön"
+            android:layout_width="400dp"
+            android:layout_height="38dp"
+            android:background="#e6ffe6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tacomys"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/bakgrundGrön"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignStart="@+id/textView5"
+            android:onClick="onTacomysClick"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_below="@+id/textView8"
+            android:layout_marginTop="16dp"
+            android:text="Inköpslista_3"
+            android:textColor="#737373"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:onClick="onInkopClick"
+            android:clickable="true"/>
+
+        <Button
+            android:id="@+id/createButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/noListButton"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:background="#808080"
+            android:text="Skapa ny inköpslista"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:onClick="onCreateListClick"
+            android:clickable="true"/>
+
+        <Button
+            android:id="@+id/noListButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:onClick="onNoListClick"
+            android:background="#39ac39"
+            android:text="Handla utan inköpslista"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

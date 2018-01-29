@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <TextView
+            android:id="@+id/titel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vänligen skanna kod vid"
+            android:textColor="#737373"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_above="@+id/titel2"
+            android:layout_alignLeft="@+id/titel2"
+            android:layout_alignStart="@+id/titel2"
+            android:layout_marginBottom="13dp" />
+
+        <TextView
+            android:id="@+id/titel2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="utcheckningsstation för"
+            android:textColor="#737373"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/titel3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="36dp" />
+
+        <TextView
+            android:id="@+id/titel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="att genomföra köp"
+            android:textColor="#737373"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_above="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/kod" />
+
+        <Button
+            android:id="@+id/skannaButton"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:background="#AED581"
+            android:clickable="true"
+            android:minWidth="150dp"
+            android:onClick="onSkannaClick"
+            android:text="Skanna kod"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</FrameLayout>
